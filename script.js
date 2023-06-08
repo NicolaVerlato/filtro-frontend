@@ -8,11 +8,10 @@ jQuery(function($){
         $("#brochures").css("background-color", "#26ac8d");
         $("#tutti").css("background-color", "#26ac8d");
         brochures.each(function() {
-            $( this ).addClass( "none" );
+            $( this ).fadeOut(300)
         });
         press.each(function() {
-            if($( this ).hasClass( "none" ))
-            $( this ).removeClass( "none" );
+            $( this ).fadeIn(300)
         });
     })
     $("#brochures").click(function (){
@@ -20,11 +19,10 @@ jQuery(function($){
         $("#press").css("background-color", "#26ac8d");
         $("#tutti").css("background-color", "#26ac8d");
         press.each(function() {
-            $( this ).addClass( "none" );
+            $( this ).fadeOut(300)
         });
         brochures.each(function() {
-            if($( this ).hasClass( "none" ))
-            $( this ).removeClass( "none" );
+            $( this ).fadeIn(300)
         });
     })
     $("#tutti").click(function (){
@@ -32,12 +30,10 @@ jQuery(function($){
         $("#press").css("background-color", "#26ac8d");
         $("#brochures").css("background-color", "#26ac8d");
         press.each(function() {
-            if($( this ).hasClass( "none" ))
-            $( this ).removeClass( "none" );
+            $( this ).fadeIn(300)
         });
         brochures.each(function() {
-            if($( this ).hasClass( "none" ))
-            $( this ).removeClass( "none" );
+            $( this ).fadeIn(300)
         });
     })
 });
