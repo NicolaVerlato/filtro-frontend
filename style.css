@@ -1,0 +1,49 @@
+.container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: calc((100% / 3) - 20px);
+    margin: 10px;
+    height: 200px;
+    border-radius: 10px;
+}
+.uno{
+    background-color: blueviolet;
+}
+.due{
+    background-color: burlywood;
+}
+.tre{
+    background-color: greenyellow;
+}
+
+.none {
+    animation: scale-display--reversed .3s both;
+    transition: all .3s ease-in-out;
+    width: 0 !important;
+}
+
+@keyframes scale-display--reversed {
+	0% {
+		display: block;
+		opacity: 1;
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+	99% {
+		display: block;
+		opacity: 0;
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+}
