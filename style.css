@@ -20,6 +20,19 @@
 .tre{
     background-color: greenyellow;
 }
+.btn{
+	cursor: pointer; 
+	width: 100px; 
+	text-align: center; 
+	padding: 10px; 
+	margin: 0 10px; 
+	border-radius: 10px; 
+	background-color: #26ac8d; 
+	color: white;
+}
+.active{
+	background-color: #1a6c7a;
+}
 
 .none{
     animation: scale-display--reversed .3s;
